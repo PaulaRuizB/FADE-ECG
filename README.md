@@ -16,6 +16,13 @@ git clone https://github.com/PaulaRuizB/FADE-ECG
    * MIT-BIH Normal Sinus Rhythm (NSR) database: https://physionet.org/content/nsrdb/1.0.0/
    * MIT-BIH Arrhythmia database: https://physionet.org/content/mitdb/1.0.0/
 
+   
+### Train baseline forecasting model with PyTorch:
+### Train domain-adapted model with PyTorch:
+### Test baseline forecasting model with PyTorch:
+### Test domain-adapted model with PyTorch:
+### Optimize models with TensorRT for inference:
+
 
 ### Our [paper](https://doi.org/10.1016/j.cmpb.2025.108780)
 If you find this code useful in your research, please consider citing:
