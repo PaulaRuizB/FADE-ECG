@@ -9,8 +9,8 @@ git clone https://github.com/PaulaRuizB/FADE-ECG
 ```
 2. What you need to use the codes:
    
-For training and testing: Python 3.10.6 and requirements fade_requirements.txt into venv_requirements folder
-For inference on NVIDIA Jetson Orin Nano: TensorRT 10.3.0 and cuda 12.5. 
+   * For training and testing: Python 3.10.6 and requirements fade_requirements.txt into venv_requirements folder
+   * For inference on NVIDIA Jetson Orin Nano: TensorRT 10.3.0 and cuda 12.5. 
 
 3. Datasets:
    * MIT-BIH Normal Sinus Rhythm (NSR) database: https://physionet.org/content/nsrdb/1.0.0/
