@@ -22,7 +22,23 @@ git clone https://github.com/PaulaRuizB/FADE-ECG
 ### Test baseline forecasting model with PyTorch:
 ### Test domain-adapted model with PyTorch:
 ### Optimize models with TensorRT for inference:
-
+From PyTorch to ONNX (utils folder):
+```
+python3 torch_to_onnx.py --weights /path_model/
+```
+From ONNX to TensorRT
+* FP32 GPU
+```
+/usr/src/tensorrt/bin/trtexec --onnx=/path_onnx_model/ --saveEngine=/path_save_trt/
+```
+* FP16 GPU
+```
+/usr/src/tensorrt/bin/trtexec --onnx=/path_onnx_model/ --saveEngine=/path_save_trt/ --fp16
+```
+* INT8 GPU
+```
+/usr/src/tensorrt/bin/trtexec --onnx=/path_onnx_model/ --saveEngine=/path_save_trt/ --int8
+```
 
 ### Our [paper](https://doi.org/10.1016/j.cmpb.2025.108780)
 If you find this code useful in your research, please consider citing:
