@@ -24,7 +24,7 @@ python -m torch.distributed.run --nproc_per_node=4 ../mains/train_original.py --
 
 ### Train domain-adapted model with PyTorch:
 ```
-python -m torch.distributed.run --nproc_per_node=4 ../mains/train_original.py --prefix repo --loss2 None --optim_name adamw --use_scheduler --warmup 0 --path_datasetinfo /path/dataset_info2.h5 --path_train_set /path/train_set2/ --path_test_set /path_test_set/ --save_every 25 --num_channels 1 --loss1 mse_inside_outside_thresholds --add_FC --batch_size 64 --sqi -1 --dropout 0.2 --lr 1e-4 --min_lr 1e-8 --total_epochs 250 --weights_mse_inorout_lastsecond 1.0 1.0 --threshold_mse_inside_outside 0.3 -0.3 --ft --dataset_FT mit_arr_beats
+python -m torch.distributed.run --nproc_per_node=4 ../mains/train_original.py --prefix repo --loss2 None --optim_name adamw --use_scheduler --warmup 0 --path_datasetinfo /path/dataset_info2.h5 --path_train_set /path/train_set2/ --path_test_set /path_test_set/ --save_every 25 --num_channels 1 --loss1 mse_inside_outside_thresholds --add_FC --batch_size 64 --sqi -1 --dropout 0.2 --lr 1e-4 --min_lr 1e-8 --total_epochs 250 --weights_mse_inorout_lastsecond 1.0 1.0 --threshold_mse_inside_outside 0.3 -0.3 --ft --dataset_FT mit_arr_beats --input_size_seconds 4
 ```
 
 ### Test forecasting models with PyTorch:
