@@ -51,7 +51,7 @@ From ONNX to TensorRT
 /usr/src/tensorrt/bin/trtexec --onnx=/path_onnx_model/ --saveEngine=/path_save_trt/ --int8
 ```
 
-### Our [paper](https://doi.org/10.1016/j.cmpb.2025.108780)
+### Our paper: [FADE: Forecasting for anomaly detection on ECG](https://doi.org/10.1016/j.cmpb.2025.108780)
 If you find this code useful in your research, please consider citing:
 
     @article{RUIZBARROSO2025108780,
