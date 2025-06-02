@@ -17,6 +17,8 @@ git clone https://github.com/PaulaRuizB/FADE-ECG
    * MIT-BIH Arrhythmia database: https://physionet.org/content/mitdb/1.0.0/
 
 4. Process the datasets:
+   * MIT-BIH Normal Sinus Rhythm (NSR) database: run ```datasets/MIT_BIH_normal_dataset.py``` after specifying the ```database_path``` (location of the raw dataset) and ```save_path``` (destination for the processed data) arguments.
+     _Note: If you want to use the signal quality index for the normal dataset, please download the ECG_QC library: ```https://github.com/Aura-healthcare/ecg_qc```_
    * MIT-BIH Arrhythmia database: run ```datasets/MIT-Arr_rhythms_beats.py``` after specifying the ```path``` (location of the raw dataset) and ```save_path``` (destination for the processed data) arguments.
    
 ### Train baseline forecasting model with PyTorch:
