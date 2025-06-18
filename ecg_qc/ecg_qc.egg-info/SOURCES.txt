@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ecg_qc.egg-info/PKG-INFO
+ecg_qc.egg-info/SOURCES.txt
+ecg_qc.egg-info/dependency_links.txt
+ecg_qc.egg-info/requires.txt
+ecg_qc.egg-info/top_level.txt
+ecg_qc/trained_models/dtc_2s.pkl
+ecg_qc/trained_models/rfc_2s.pkl
+ecg_qc/trained_models/rfc_norm_2s.pkl
+ecg_qc/trained_models/xgb_9s.joblib
